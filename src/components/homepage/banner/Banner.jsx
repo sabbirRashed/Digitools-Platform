@@ -15,12 +15,12 @@ const Banner = () => {
                     <span className=' bg-clip-text text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] '>New: AI-Powered Tools Available</span>
                 </div>
                 <h2 className=' text-[#101727] text-4xl md:text-5xl xl:text-7xl/tight font-extrabold text-center md:text-left'>Supercharge Your Digital Workflow</h2>
-                <p className=' text-[#627382] max-w-140 text-center md:text-left'>Access premium AI tools, design assets, templates, and productivity
+                <p className='text-[#627382] max-w-140 text-center md:text-left'>Access premium AI tools, design assets, templates, and productivity
                     software—all in one place. Start creating faster today. <br />
                     Explore Products</p>
                 <div className='flex justify-center md:justify-start items-center gap-2 mt-8'>
-                    <button className=' btn px-3 py-5 rounded-[1000px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#6C5BFF] hover:to-[#B23CFF] font-semibold'>Explore Products</button>
-                    <button className='group btn border border-[#9514FA] px-3 py-5 rounded-[1000px]  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent hover:text-white hover:bg-clip-border'>
+                    <button className=' btn px-4 py-6 rounded-[1000px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#6C5BFF] hover:to-[#B23CFF] font-semibold'>Explore Products</button>
+                    <button className='btn px-4 py-6 rounded-[1000px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] border border-[#9514FA] bg-clip-text text-transparent hover:text-white hover:bg-clip-border group '>
                         <span className='rotate-90 text-[#4F39F6] group-hover:text-white'><TbTriangle /></span>
                         Watch Demo
                     </button>

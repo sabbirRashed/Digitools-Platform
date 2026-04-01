@@ -2,7 +2,7 @@ import React from 'react';
 
 const Status = () => {
     return (
-        <div className='mt-15 mb-20 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>
+        <div className='mt-15 md:mt-20 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>
             <div className='max-w-300 mx-auto p-6 md:p-15 flex justify-around'>
                 <div className=' text-center space-y-3'>
                     <p className='text-3xl md:text-6xl font-extrabold'>50K+</p>
