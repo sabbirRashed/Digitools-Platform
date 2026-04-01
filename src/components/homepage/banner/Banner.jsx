@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div className='w-11/12 max-w-300 mx-auto mt-8 md:mt-15 flex flex-col-reverse md:flex-row justify-between items-center gap-4'>
             <div className='max-w-160 space-y-4'>
-                <div className='bg-[#E1E7FF] rounded-[1000px] px-4 py-1 flex items-center gap-1 max-w-[294px] mx-auto md:mx-0'>
+                <div className='bg-[#E1E7FF] rounded-[1000px] px-4 py-1 flex items-center gap-1 max-w-73.5 mx-auto md:mx-0'>
                     <div className='w-4 h-4 rounded-full bg-[#c4a3e2] flex justify-center items-center'>
                         <div className='w-3 h-3 rounded-full bg-[#ae75e2] flex justify-center items-center'>
                             <div className='w-1.5 h-1.5 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]'></div>
