@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { BsCart } from 'react-icons/bs';
+import { FaCartShopping } from 'react-icons/fa6';
 import { HiDotsVertical } from 'react-icons/hi';
 import { ImCross } from 'react-icons/im';
 
 
-const Navbar = () => {
+const Navbar = ({selectedTools}) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -37,7 +37,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end items-center gap-2 font-medium">
-                    <BsCart />
+                    <div className='relative'>
+                        <FaCartShopping></FaCartShopping>
+                        {selectedTools.length === 0
+                        ?""
+                        :<div className='w-4 h-4 flex justify-center items-center text-[10px] text-white font-medium rounded-full border border-gray-200 bg-red-500 absolute -top-2 left-3'>{selectedTools.length}</div>}
+                    </div>
                     <span
                         onClick={() => { setOpen(!open) }}
                         className='sm:hidden relative'>

@@ -14,7 +14,7 @@ const Banner = () => {
                     </div>
                     <span className=' bg-clip-text text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] '>New: AI-Powered Tools Available</span>
                 </div>
-                <h2 className=' text-[#101727] text-4xl md:text-5xl xl:text-7xl/tight font-extrabold text-center md:text-left'>Supercharge Your Digital Workflow</h2>
+                <h2 className=' text-[#101727] text-4xl md:text-5xl xl:text-6xl/tight font-extrabold text-center md:text-left'>Supercharge Your <span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>Digital Workflow</span></h2>
                 <p className='text-[#627382] max-w-140 text-center md:text-left'>Access premium AI tools, design assets, templates, and productivity
                     software—all in one place. Start creating faster today. <br />
                     Explore Products</p>
@@ -27,7 +27,7 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div>
+            <div className='shadow-2xl rounded-lg '>
                 <img className='w-full' src={bannerImage} alt="" />
             </div>
         </div>

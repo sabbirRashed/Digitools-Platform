@@ -1,5 +1,6 @@
 import React from 'react';
 import { toolIcons } from '../../toolsIcon';
+import { toast } from 'react-toastify';
 
 const SelectedToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) => {
 
@@ -8,6 +9,7 @@ const SelectedToolCard = ({ tool, selectedTools, setSelectedTools, price, setPri
 
         setSelectedTools(filteredSelectedTools)
         setPrice(price-tool.price)
+        toast.success("Item removed successfully");
     }
     return (
         <div className='bg-[#F9FAFC] p-5 rounded-xl flex justify-between items-center'>

@@ -2,11 +2,10 @@ import React, { use, useState } from 'react';
 import AvailablePremiumTools from './availablePremiumTools/AvailablePremiumTools';
 import SelectedPremiumTools from './SelectedPremiumTools/SelectedPremiumTools';
 
-const PremiumTools = ({ premiumToolsPromise }) => {
+const PremiumTools = ({ premiumToolsPromise, selectedTools, setSelectedTools }) => {
 
     const premiumToolsData = use(premiumToolsPromise);
     const [selectedTab, setSelectedTab] = useState('products');
-    const [selectedTools, setSelectedTools] = useState([]);
     const [price, setPrice] = useState(0);
 
 
@@ -19,7 +18,7 @@ const PremiumTools = ({ premiumToolsPromise }) => {
                 <p className='text-[#627382] max-w-140 mx-auto'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
 
 
-                <div className='border border-[#ece6e6] p-1 inline-block rounded-[1000px]'>
+                <div className='border border-[#ece6e6] p-1 inline-block rounded-[1000px] bg-white'>
                     <button
                         onClick={() => { setSelectedTab('products') }}
                         className={`btn p-6 rounded-[1000px] 
@@ -44,7 +43,7 @@ const PremiumTools = ({ premiumToolsPromise }) => {
 
 
             {/* cards container */}
-            <div >
+            <div className='bg-white p-6 rounded-xl mt-10 border border-gray-100'>
                 {
                     selectedTab === 'products'
                         ? <AvailablePremiumTools
