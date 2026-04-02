@@ -1,11 +1,14 @@
 import React, { use, useState } from 'react';
 import AvailablePremiumTools from './availablePremiumTools/AvailablePremiumTools';
+import SelectedPremiumTools from './SelectedPremiumTools/SelectedPremiumTools';
 
 const PremiumTools = ({ premiumToolsPromise }) => {
 
     const premiumToolsData = use(premiumToolsPromise);
     const [selectedTab, setSelectedTab] = useState('products');
     const [selectedTools, setSelectedTools] = useState([]);
+    const [price, setPrice] = useState(0);
+    
 
     return (
         <div className='w-11/12 max-w-300 mx-auto my-20 md:my-30'>
@@ -43,12 +46,24 @@ const PremiumTools = ({ premiumToolsPromise }) => {
             {/* cards container */}
             <div >
                 {
-                    <AvailablePremiumTools
-                        premiumToolsData={premiumToolsData}
-                        selectedTools={selectedTools}
-                        setSelectedTools={setSelectedTools}
-                    >
-                    </AvailablePremiumTools>
+                    selectedTab === 'products'
+                        ? <AvailablePremiumTools
+                            premiumToolsData={premiumToolsData}
+                            selectedTools={selectedTools}
+                            setSelectedTools={setSelectedTools}
+                            price={price}
+                            setPrice={setPrice}
+
+                        >
+                        </AvailablePremiumTools>
+                        : <SelectedPremiumTools
+                            selectedTools={selectedTools}
+                            setSelectedTools={setSelectedTools}
+                            price={price}
+                            setPrice={setPrice}
+                        >
+                        </SelectedPremiumTools>
+
                 }
             </div>
         </div>

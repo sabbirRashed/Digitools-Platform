@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, {} from 'react';
 import PremiumToolFeature from './PremiumToolFeature';
 import { toolIcons } from '../../toolsIcon';
 import { IoCheckmarkSharp } from 'react-icons/io5';
 
 
-const ToolCard = ({ tool, selectedTools, setSelectedTools }) => {
-    const [isBuy, setIsBuy] = useState(false);
+const ToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) => {
+    const isBuy = selectedTools.includes(tool);
 
     const handleSelectedTools = (tool) => {
-        setSelectedTools([...selectedTools, tool]);
-        setIsBuy(true)
+        if (isBuy) {
+            return;
+        }
+        setSelectedTools([...selectedTools, tool]),
+            setPrice(price + tool.price)
     }
 
     return (

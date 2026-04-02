@@ -52,8 +52,8 @@ const Navbar = () => {
                                 ${open ?
                                 'top-8 -right-6' : '-top-40 -right-6'}`
                         }>
-                            <li><button className='btn px-9 py-1 rounded-[1000px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-[1rem] cursor-pointer hover:from-[#6C5BFF] hover:to-[#B23CFF]'>Login</button></li>
-                            <li><button className='btn px-3 py-1 rounded-[1000px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-[1rem] cursor-pointer hover:from-[#6C5BFF] hover:to-[#B23CFF]'>Get Started</button></li>
+                            <li><button className='btn px-9 py-1 rounded-[1000px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-[1rem] hover:from-[#6C5BFF] hover:to-[#B23CFF]'>Login</button></li>
+                            <li><button className='btn px-3 py-1 rounded-[1000px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-[1rem] hover:from-[#6C5BFF] hover:to-[#B23CFF]'>Get Started</button></li>
                         </ul>
                     </span>
 
