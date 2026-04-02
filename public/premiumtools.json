@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Design Kit",
+    "description": "Create stunning graphics and modern UI designs effortlessly with a powerful set of professional tools and ready-made assets.",
+    "price": 49,
+    "period": "One-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "500+ templates",
+      "Drag & Drop Editor",
+      "Export to PNG/JPG/SVG"
+    ],
+    "icon": "proDesign"
+  },
+  {
+    "id": 2,
+    "name": "SEO Booster",
+    "description": "Optimize your website and improve search engine rankings with advanced tools for keyword research and competitor analysis.",
+    "price": 19,
+    "period": "Month",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Keyword Suggestions",
+      "Competitor Analysis",
+      "Weekly Reports"
+    ],
+    "icon": "seoBooster"
+  },
+  {
+    "id": 3,
+    "name": "AI Writer",
+    "description": "Generate high-quality, engaging content in seconds using AI-powered writing tools designed for blogs, ads, and SEO.",
+    "price": 99,
+    "period": "Year",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "AI Content Generation",
+      "Multiple Languages",
+      "SEO Friendly"
+    ],
+    "icon": "aiWriter"
+  },
+  {
+    "id": 4,
+    "name": "Social Scheduler",
+    "description": "Plan, manage, and schedule your social media posts efficiently across multiple platforms with automation and analytics.",
+    "price": 29,
+    "period": "Month",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Multi-platform",
+      "Auto Post",
+      "Analytics Dashboard"
+    ],
+    "icon": "socialScheduler"
+  },
+  {
+    "id": 5,
+    "name": "Invoice Pro",
+    "description": "Easily manage invoices, track payments, and handle client billing with smart automation and customizable templates.",
+    "price": 59,
+    "period": "One-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Custom Templates",
+      "Recurring Invoices",
+      "PDF Export"
+    ],
+    "icon": "invoicePro"
+  },
+  {
+    "id": 6,
+    "name": "Code Optimizer",
+    "description": "Improve your code performance and reduce load times with powerful tools for optimization, linting, and error detection.",
+    "price": 39,
+    "period": "Month",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Minify JS/CSS",
+      "Linting",
+      "Performance Reports"
+    ],
+    "icon": "codeOptimizer"
+  },
+  {
+    "id": 7,
+    "name": "Analytics Hub",
+    "description": "Track and analyze website and app performance with real-time insights, user behavior data, and customizable reports.",
+    "price": 79,
+    "period": "Year",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Real-time Dashboard",
+      "User Insights",
+      "Custom Reports"
+    ],
+    "icon": "analyticsHub"
+  },
+  {
+    "id": 8,
+    "name": "Video Studio",
+    "description": "Edit and create professional-quality videos with ease using powerful tools, templates, and advanced editing features.",
+    "price": 89,
+    "period": "One-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Templates & Effects",
+      "Multi-format Export",
+      "Voiceover Support"
+    ],
+    "icon": "videoStudio"
+  },
+  {
+    "id": 9,
+    "name": "Password Vault",
+    "description": "Securely store, manage, and auto-fill your passwords across devices with advanced encryption and seamless synchronization.",
+    "price": 14,
+    "period": "Month",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Encrypted Storage",
+      "Auto-fill Passwords",
+      "Cross-device Sync"
+    ],
+    "icon": "passwordVault"
+  }
+]
