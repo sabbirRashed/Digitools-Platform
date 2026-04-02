@@ -6,6 +6,7 @@ import PremiumTools from './components/homepage/premiumTools/PremiumTools'
 import Navbar from './components/navbar/Navbar'
 import LoadingSpinner from './components/Ui/LoadingSpinner'
 import { ToastContainer } from 'react-toastify'
+import Step from './components/homepage/Step/Step'
 
 
 const premiumToolsPromise = fetch('/premiumtools.json')
@@ -29,6 +30,7 @@ function App() {
         >
         </PremiumTools>
       </Suspense>
+      <Step></Step>
 
 
       {/* react tostify container */}

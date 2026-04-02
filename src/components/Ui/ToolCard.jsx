@@ -20,7 +20,7 @@ const ToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) =>
 
     return (
         <div
-            className="card bg-base-100 shadow border border-[#F2F2F2] p-6 space-y-6">
+            className="card bg-base-100 shadow border border-[#F2F2F2] p-6 space-y-3 md:space-y-6">
 
             <div className={`rounded-full absolute top-2 right-2
                             ${tool.tagType === "popular"
@@ -45,11 +45,11 @@ const ToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) =>
                 <img className='w-full h-full' src={toolIcons[tool.icon]} alt={tool.name} />
             </div>
 
-            <h2 className='text-2xl font-bold text-[#101727]'>{tool.name}</h2>
+            <h2 className='text-xl sm:text-2xl font-bold text-[#101727]'>{tool.name}</h2>
 
-            <p className=' text-[#627382]'>{tool.description}</p>
+            <p className='text-sm sm:text-[16px] text-[#627382]'>{tool.description}</p>
 
-            <p className='text-2xl font-bold'>${tool.price}<span className='text-[1rem] font-medium text-[#627382]'>/{tool.period}</span></p>
+            <p className='text-xl sm:text-2xl font-bold'>${tool.price}<span className='text-sm sm:text-[1rem] font-medium text-[#627382]'>/{tool.period}</span></p>
 
             <ul className='space-y-1'>
                 {

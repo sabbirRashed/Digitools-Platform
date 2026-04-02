@@ -18,10 +18,10 @@ const SelectedPremiumTools = ({ selectedTools, setSelectedTools, price, setPrice
                         <div className='flex justify-center items-center'>
                             <TbShoppingCartOff className='text-6xl text-[#627382]'/>
                         </div>
-                        <h2 className='text-4xl font-bold text-[#101727] mt-6'>Your cart is empty!</h2>
-                        <p className='font-medium text-[#627382] mt-3'>Your selected items will appear here after you add them to your cart.</p>
+                        <h2 className='text-2xl md:text-4xl font-bold text-[#101727] mt-6'>Your cart is empty!</h2>
+                        <p className='text-sm text-[1rem] font-medium text-[#627382] mt-3'>Your selected items will appear here after you add them to your cart.</p>
                     </div>
-                    : <div className='border-2 border-[#F2F2F2] rounded-lg p-6 space-y-6'>
+                    : <div className=' rounded-lg p-0 sm:p-6 space-y-6'>
                         <h2 className='text-2xl font-bold text-[#101727]'>Your Cart</h2>
                         <div className='space-y-4'>
                             {
@@ -40,7 +40,7 @@ const SelectedPremiumTools = ({ selectedTools, setSelectedTools, price, setPrice
                         </div>
                         <div className='flex justify-between items-center'>
                             <p className='text-[#627382]'>Total:</p>
-                            <p className='text-2xl font-bold text-[#101727]'>${price}</p>
+                            <p className='text-lg sm:text-2xl font-bold text-[#101727]'>${price}</p>
                         </div>
                         <button
                             onClick={() => { handleCheckoutBtn() }}
