@@ -2,6 +2,7 @@ import React, {} from 'react';
 import PremiumToolFeature from './PremiumToolFeature';
 import { toolIcons } from '../../toolsIcon';
 import { IoCheckmarkSharp } from 'react-icons/io5';
+import { toast } from 'react-toastify';
 
 
 const ToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) => {
@@ -9,10 +10,12 @@ const ToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) =>
 
     const handleSelectedTools = (tool) => {
         if (isBuy) {
+            toast.error('Item already exists in cart!')
             return;
         }
-        setSelectedTools([...selectedTools, tool]),
-            setPrice(price + tool.price)
+        setSelectedTools([...selectedTools, tool])
+        setPrice(price + tool.price)
+        toast.success('Added to cart!')
     }
 
     return (
@@ -59,7 +62,7 @@ const ToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) =>
                 className={`btn text-white rounded-[1000px]  ${isBuy ? " bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:from-[#6C5BFF] hover:to-[#B23CFF]"}`}>
                 {isBuy ?
                     (<>
-                        <IoCheckmarkSharp></IoCheckmarkSharp> Added to curt
+                        <IoCheckmarkSharp></IoCheckmarkSharp> Added to Cart
                     </>)
                     : ("Buy Now")
                 }

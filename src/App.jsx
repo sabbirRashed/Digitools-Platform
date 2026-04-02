@@ -5,6 +5,7 @@ import Status from './components/homepage/ourStatus/Status'
 import PremiumTools from './components/homepage/premiumTools/PremiumTools'
 import Navbar from './components/navbar/Navbar'
 import LoadingSpinner from './components/Ui/LoadingSpinner'
+import { ToastContainer } from 'react-toastify'
 
 
 const premiumToolsPromise = fetch('/premiumtools.json')
@@ -22,6 +23,10 @@ function App() {
       <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
         <PremiumTools premiumToolsPromise={premiumToolsPromise}></PremiumTools>
       </Suspense>
+
+
+      {/* react tostify container */}
+       <ToastContainer/>
     </>
   )
 }

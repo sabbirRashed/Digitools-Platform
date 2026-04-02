@@ -8,7 +8,7 @@ const PremiumTools = ({ premiumToolsPromise }) => {
     const [selectedTab, setSelectedTab] = useState('products');
     const [selectedTools, setSelectedTools] = useState([]);
     const [price, setPrice] = useState(0);
-    
+
 
     return (
         <div className='w-11/12 max-w-300 mx-auto my-20 md:my-30'>

@@ -1,7 +1,14 @@
 import React from 'react';
-import {toolIcons} from '../../toolsIcon';
+import { toolIcons } from '../../toolsIcon';
 
-const SelectedToolCard = ({tool, selectedTools, setSelectedTools}) => {
+const SelectedToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) => {
+
+    const handleTools = () => {
+        const filteredSelectedTools = selectedTools.filter(selectedtool => selectedtool.name !== tool.name);
+
+        setSelectedTools(filteredSelectedTools)
+        setPrice(price-tool.price)
+    }
     return (
         <div className='bg-[#F9FAFC] p-5 rounded-xl flex justify-between items-center'>
             <div className='flex items-center gap-4'>
@@ -14,7 +21,9 @@ const SelectedToolCard = ({tool, selectedTools, setSelectedTools}) => {
                 </div>
             </div>
 
-            <button className='btn text-[#FF3980] rounded-full border-none shadow-none'>
+            <button
+                onClick={() => { handleTools() }}
+                className='btn text-[#FF3980] rounded-full border-none shadow-none'>
                 Remove
             </button>
         </div>
