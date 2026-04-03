@@ -1,16 +1,28 @@
-# React + Vite
+# 📌 Project Name
+DigiTools – Premium Digital Tools Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Description
+DigiTools is a modern web application where users can explore and purchase premium digital tools. The platform provides a smooth shopping experience with dynamic product selection, real-time cart updates, and interactive UI feedback. Users can easily browse products, add them to the cart, and manage their selections before checkout.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
+### - React.js – For building interactive UI
+### - Tailwind CSS – For fast and responsive styling
+### - React Icons – For modern icon integration
+### - DaisyUI – For pre-built UI components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+### 1. Dynamic Cart System
+- Clicking on a product increases the cart count in the Navbar
+- Cart icon only shows count when items are added
+- Clicking Proceed to Checkout clears all selected items
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Interactive Buy Button
+- “Buy Now” button instantly adds product to cart
+- Button changes to “Added to Cart” with green background
+- Toast notification confirms the action
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. Smart Cart Management
+- Cart section displays selected products with image, name, and price
+- Users can remove items individually with a success message
+- Total price updates dynamically based on selected products
