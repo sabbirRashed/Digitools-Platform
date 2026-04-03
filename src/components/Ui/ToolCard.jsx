@@ -20,7 +20,7 @@ const ToolCard = ({ tool, selectedTools, setSelectedTools, price, setPrice }) =>
 
     return (
         <div
-            className="card bg-base-100 shadow border border-[#F2F2F2] p-6 space-y-3 md:space-y-6">
+            className="card bg-base-100 shadow border border-gray-200 p-6 space-y-3 md:space-y-6">
 
             <div className={`rounded-full absolute top-2 right-2
                             ${tool.tagType === "popular"

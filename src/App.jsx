@@ -7,15 +7,21 @@ import Navbar from './components/navbar/Navbar'
 import LoadingSpinner from './components/Ui/LoadingSpinner'
 import { ToastContainer } from 'react-toastify'
 import Step from './components/homepage/Step/Step'
+import Pricing from './components/homepage/Pricing/Pricing'
 
 
 const premiumToolsPromise = fetch('/premiumtools.json')
-  .then(res => res.json())
+  .then(res => res.json());
+
+const fetchPricng = fetch("/pricingData.json")
+  .then(res=> res.json());
+
 
 
 
 function App() {
   const [selectedTools, setSelectedTools] = useState([]);
+  
 
   return (
     <>
@@ -31,6 +37,7 @@ function App() {
         </PremiumTools>
       </Suspense>
       <Step></Step>
+      <Pricing pricingPromise={fetchPricng}></Pricing>
 
 
       {/* react tostify container */}
