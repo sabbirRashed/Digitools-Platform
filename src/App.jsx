@@ -9,6 +9,7 @@ import { ToastContainer } from 'react-toastify'
 import Step from './components/homepage/Step/Step'
 import Pricing from './components/homepage/Pricing/Pricing'
 import Footer from './components/homepage/Footer/Footer'
+import Workflow from './components/homepage/Workflow/Workflow'
 
 
 const premiumToolsPromise = fetch('/premiumtools.json')
@@ -39,6 +40,7 @@ function App() {
       </Suspense>
       <Step></Step>
       <Pricing pricingPromise={fetchPricng}></Pricing>
+      <Workflow></Workflow>
       <Footer></Footer>
 
 

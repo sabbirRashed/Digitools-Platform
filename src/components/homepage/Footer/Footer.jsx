@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='footer-section pt-15 md:pt-30 bg-[#101727] text-white pb-8'>
             <div className='footer-content w-11/12 max-w-300 mx-auto'>
                 <div className='min-h-20 grid grid-cols-1 lg:grid-cols-5 gap-4'>
-                    <div className='space-y-4'>
+                    <div className='space-y-4 mr-6'>
                         <h2 className='text-3xl md:text-4xl font-bold'>DigiTools</h2>
                         <p className='text-gray-300'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                     </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col-reverse gap-4 lg:flex-row justify-between mt-10 md:mt-20 text-gray-400'>
+                <div className='flex flex-col-reverse gap-4 lg:flex-row justify-between mt-10 md:mt-20 text-gray-400 pt-5 border-t-2 border-t-gray-500'>
                     <p className='text-center lg:left'>© 2026 Digitools. All rights reserved.</p>
                     <div className='flex justify-center lg:justify-start gap-6'>
                         <a href="">Privacy Policy</a>
