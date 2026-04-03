@@ -8,6 +8,7 @@ import LoadingSpinner from './components/Ui/LoadingSpinner'
 import { ToastContainer } from 'react-toastify'
 import Step from './components/homepage/Step/Step'
 import Pricing from './components/homepage/Pricing/Pricing'
+import Footer from './components/homepage/Footer/Footer'
 
 
 const premiumToolsPromise = fetch('/premiumtools.json')
@@ -38,6 +39,7 @@ function App() {
       </Suspense>
       <Step></Step>
       <Pricing pricingPromise={fetchPricng}></Pricing>
+      <Footer></Footer>
 
 
       {/* react tostify container */}
