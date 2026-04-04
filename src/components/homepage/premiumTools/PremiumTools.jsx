@@ -10,7 +10,7 @@ const PremiumTools = ({ premiumToolsPromise, selectedTools, setSelectedTools }) 
 
 
     return (
-        <div className=' max-w-300 mx-auto my-20 md:my-30'>
+        <div id='products' className=' max-w-300 mx-auto my-20 md:my-30'>
 
             {/* content box */}
             <div className='w-11/12 mx-auto text-center space-y-4'>
