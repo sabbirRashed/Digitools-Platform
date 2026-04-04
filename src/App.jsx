@@ -16,14 +16,14 @@ const premiumToolsPromise = fetch('/premiumtools.json')
   .then(res => res.json());
 
 const fetchPricng = fetch("/pricingData.json")
-  .then(res=> res.json());
+  .then(res => res.json());
 
 
 
 
 function App() {
   const [selectedTools, setSelectedTools] = useState([]);
-  
+
 
   return (
     <>
@@ -39,7 +39,9 @@ function App() {
         </PremiumTools>
       </Suspense>
       <Step></Step>
-      <Pricing pricingPromise={fetchPricng}></Pricing>
+      <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
+        <Pricing pricingPromise={fetchPricng}></Pricing>
+      </Suspense>
       <Workflow></Workflow>
       <Footer></Footer>
 
