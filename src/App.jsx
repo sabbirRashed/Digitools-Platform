@@ -12,8 +12,10 @@ import Footer from './components/homepage/Footer/Footer'
 import Workflow from './components/homepage/Workflow/Workflow'
 
 
-const premiumToolsPromise = fetch('/premiumtools.json')
-  .then(res => res.json());
+const premiumToolsPromise = async()=>{
+  const fetchres= await fetch( "/premiumtool.json")
+  return fetchres.json();
+}
 
 const fetchPricng = fetch("/pricingData.json")
   .then(res => res.json());
@@ -23,7 +25,7 @@ const fetchPricng = fetch("/pricingData.json")
 
 function App() {
   const [selectedTools, setSelectedTools] = useState([]);
-
+  const promise = premiumToolsPromise()
 
   return (
     <>
@@ -32,7 +34,7 @@ function App() {
       <Status></Status>
       <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
         <PremiumTools
-          premiumToolsPromise={premiumToolsPromise}
+          premiumToolsPromise={promise}
           selectedTools={selectedTools}
           setSelectedTools={setSelectedTools}
         >

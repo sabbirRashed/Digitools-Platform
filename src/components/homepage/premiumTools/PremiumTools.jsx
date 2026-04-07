@@ -5,6 +5,7 @@ import SelectedPremiumTools from './SelectedPremiumTools/SelectedPremiumTools';
 const PremiumTools = ({ premiumToolsPromise, selectedTools, setSelectedTools }) => {
 
     const premiumToolsData = use(premiumToolsPromise);
+   
     const [selectedTab, setSelectedTab] = useState('products');
     const [price, setPrice] = useState(0);
 

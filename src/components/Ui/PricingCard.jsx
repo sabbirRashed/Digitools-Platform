@@ -3,7 +3,6 @@ import PricingFeature from './PricingFeature';
 
 const PricingCard = ({pricing}) => {
     
-    console.log(pricing)
     return (
         <div className={`card  border-gray-200 ${
             pricing.name === "Pro"
