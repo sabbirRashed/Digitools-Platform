@@ -10,6 +10,7 @@ const PricingCard = ({pricing}) => {
             : "bg-gray-50 border"
         }`}>
             <div className="card-body relative flex flex-col">
+                <h1>hello world</h1>
                 {
                     pricing.name === "Pro"
                     ?<span className="badge badge-xs badge-warning absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-100 text-amber-600 border-none p-3 rounded-full font-semibold">Most Popular</span>
